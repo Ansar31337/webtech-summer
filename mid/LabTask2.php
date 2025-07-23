@@ -59,3 +59,41 @@
            }
      </style>
 </head>
+
+<body>
+    <h1> Bank Management System</h1>
+    <h2>Your Trusted Financial Partner</h2>
+    <div class="form-box">
+        <form action="#" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend><strong>Customer Registration Form</strong></legend>
+                <table>
+                   <tr>
+                         <td>Full Name:
+                             <br>
+                             <input type="text" name="fullname">
+                         </td>
+                           </tr>
+                    <tr>
+                        <td>Date of Birth:
+                            <br>
+                            <input type="date" name="dob">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gender:
+                            <br>
+                            <input type="radio" name="gender" value="Male"> Male
+                            <input type="radio" name="gender" value="Female"> Female
+                            <input type="radio" name="gender" value="Other"> Other
+                        </td>
+                    </tr>
+                    <tr>
+                         <td>Marital Status:
+                            <br>
+                            <select name="marital">
+                                <option value="Single">Single</option>
+                                <option value="Married">Married</option>
+                            </select>
+                        </td>
+                    </tr>
