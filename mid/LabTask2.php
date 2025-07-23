@@ -122,3 +122,27 @@
                             <br>
                             <input type="email" name="email">
                         </td>
+                    </tr>
+                    <tr>
+                        <td>Address:
+                            <br>
+                            <input type="text" name="address">
+                     </td>
+                    </tr>
+                    <tr>
+                        <td>Occupation:
+                            <br>
+                            <input type="text" name="occupation">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>National ID (NID):
+                            <br>
+                            <input type="text" name="nid">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Set Password:
+                            <br>
+                            <input type="password" name="password">
+                        </td>
