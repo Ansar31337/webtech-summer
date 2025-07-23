@@ -72,8 +72,8 @@
                          <td>Full Name:
                              <br>
                              <input type="text" name="fullname">
-                         </td>
-                           </tr>
+                       </td>
+                    </tr>
                     <tr>
                         <td>Date of Birth:
                             <br>
@@ -97,6 +97,7 @@
                             </select>
                         </td>
                     </tr>
+                    <tr>
                          <td>Account Type:
                             <br>
                             <select name="account_type">
@@ -115,7 +116,7 @@
                         <td>Mobile Number:
                             <br>
                             <input type="text" name="mobile">
-                            </td>
+                        </td>
                     </tr>
                     <tr>
                         <td>Email Address:
@@ -127,7 +128,7 @@
                         <td>Address:
                             <br>
                             <input type="text" name="address">
-                     </td>
+                        </td>
                     </tr>
                     <tr>
                         <td>Occupation:
@@ -146,3 +147,28 @@
                             <br>
                             <input type="password" name="password">
                         </td>
+                    </tr>
+                    <tr>
+                        <td>Upload ID Proof:
+                            <br>
+                            <input type="file" name="file">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" name="agree"> I agree to the terms and conditions
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="Register">
+                            <input type="reset" value="Clear">
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
