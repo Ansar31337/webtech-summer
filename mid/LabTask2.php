@@ -97,3 +97,28 @@
                             </select>
                         </td>
                     </tr>
+                         <td>Account Type:
+                            <br>
+                            <select name="account_type">
+                                <option value="Savings">Savings</option>
+                                <option value="Current">Current</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Initial Deposit Amount:
+                            <br>
+                            <input type="text" name="deposit">
+                       </td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Number:
+                            <br>
+                            <input type="text" name="mobile">
+                            </td>
+                    </tr>
+                    <tr>
+                        <td>Email Address:
+                            <br>
+                            <input type="email" name="email">
+                        </td>
