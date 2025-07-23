@@ -34,3 +34,28 @@
                 padding: 6px;
                 font-size: 14px;
            }
+           input[type="text"],
+           input[type="email"],
+           input[type="data"],
+           input[type="password"],
+           select {
+                width: 100%;
+                padding: 5px;
+           }
+           input[type="file"] {
+               padding: 5px;
+           }
+           input[type="submit"],
+           input[type="reset"] {
+               padding: 6px 14px;
+               margin-top: 8px;
+               cursor: pointer;
+           }
+           input[type="checkbox"] {
+                margin-top: 8px;
+           }
+           textarea {
+                 width: 100%;
+           }
+     </style>
+</head>
