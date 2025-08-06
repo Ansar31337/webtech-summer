@@ -21,3 +21,11 @@ function validateForm(e) {
     const username = document.getElementById('username').value.trim();
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirmPassword').value;
+
+    
+    // Full Name: letters, spaces, hyphens only
+    if (!/^[A-Za-z\s-]+$/.test(fullName) || fullName === '') {
+        document.getElementById('fullNameError').textContent = 'Only letters, spaces and hyphens allowed.';
+        document.getElementById('fullName').classList.add('invalid');
+        isValid = false;
+    }
