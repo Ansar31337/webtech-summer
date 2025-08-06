@@ -50,3 +50,17 @@ function validateForm(e) {
         document.getElementById('email').classList.add('invalid');
         isValid = false;
     }
+    
+    // Insurance Provider: must be selected
+    if (!insuranceProvider) {
+        document.getElementById('insuranceProviderError').textContent = 'Please select a provider.';
+        document.getElementById('insuranceProvider').classList.add('invalid');
+        isValid = false;
+    }
+	
+    // Policy Number: alphanumeric, exactly 10 characters
+    if (!/^[A-Za-z0-9]{10}$/.test(policyNumber)) {
+        document.getElementById('policyNumberError').textContent = 'Must be alphanumeric are 10 characters long.';
+        document.getElementById('policyNumber').classList.add('invalid');
+        isValid = false;
+    }
