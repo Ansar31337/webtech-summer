@@ -29,3 +29,26 @@ input[type="text"],
 input[type="email"],
 input[type="number"],
 input[type="password"]
+select,
+textarea {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+input[type="submit"],
+input[type="reset"] {
+    padding: 6px 14px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+.error {
+    color: red;
+    font-size: 12px;
+    display: block;
+}
+.success {
+    color: green;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
