@@ -43,3 +43,10 @@ function validateForm(e) {
         document.getElementById('phone').classList.add('invalid');
         isValid = false;
     }
+
+    // Email: valid format
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        document.getElementById('emailError').textContent = 'Enter a valid email address.';
+        document.getElementById('email').classList.add('invalid');
+        isValid = false;
+    }
