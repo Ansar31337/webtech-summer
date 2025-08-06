@@ -52,3 +52,11 @@ input[type="reset"] {
     text-align: center;
     margin-top: 10px;
 }
+input.invalid, select.invalid {
+    border: 1px solid red;
+}
+@media (max-width: 600px) {
+    .form-box {
+        width: 90%;
+    }
+}
