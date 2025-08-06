@@ -5,3 +5,8 @@ body {
     padding: 0;
     height: 100vh;
 }
+h1, h2{
+    text-align: center;
+    color: darkgreen;
+    margin: 10px 0;
+}
