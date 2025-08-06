@@ -36,3 +36,10 @@ function validateForm(e) {
         document.getElementById('age').classList.add('invalid');
         isValid = false;
     }
+
+    // Phone: (XXX) XXX-XXXX
+    if (!/^\(\d{3}\)\s\d{3}-\d{4}$/.test(phone)) {
+        document.getElementById('phoneError').textContent = 'Format must be (XXX) XXX-XXXX';
+        document.getElementById('phone').classList.add('invalid');
+        isValid = false;
+    }
