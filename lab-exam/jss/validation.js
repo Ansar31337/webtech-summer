@@ -30,7 +30,7 @@ function validateForm(e) {
         isValid = false;
     }
 
-    // Age
+    // Age: must be 18 or older
     if (age === '' || isNaN(age) || Number(age) < 18) {
         document.getElementById('ageError').textContent = 'Age must be 18 or older';
         document.getElementById('age').classList.add('invalid');
