@@ -10,3 +10,9 @@ function validateForm(e) {
     document.querySelectorAll('.error').forEach(span => span.textContent = '');
     document.querySelectorAll('input, select').forEach(el => el.classList.remove('invalid'));
     document.getElementById('successMessage').textContent = '';
+
+    // Get values
+    const fullName = document.getElementById('fullName').value.trim();
+    const age = document.getElementById('age').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+    const email = document.getElementById('email').value.trim();
