@@ -16,3 +16,8 @@ function validateForm(e) {
     const age = document.getElementById('age').value.trim();
     const phone = document.getElementById('phone').value.trim();
     const email = document.getElementById('email').value.trim();
+    const insuranceProvider = document.getElementById('insuranceProvider').value;
+    const policyNumber = document.getElementById('policyNumber').value.trim();
+    const username = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirmPassword').value;
