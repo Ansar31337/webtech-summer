@@ -79,4 +79,18 @@ function validateForm(e) {
         document.getElementById('password').classList.add('invalid');
         isValid = false;
     }
-    
+
+    // Confirm Password:
+    if (confirmPassword !== password || confirmPassword === '') {
+        document.getElementById('confirmPasswordError').textContent = 'Passwords do not match.';
+        document.getElementById('confirmPassword').classList.add('invalid');
+        isValid = false;
+    }
+
+    // Success
+    if (isValid) {
+        document.getElementById('patientForm').reset();
+        document.getElementById('successMessage').textContent = 'Patient registered successfully!';
+    }
+    return false;
+}
