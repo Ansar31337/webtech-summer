@@ -30,37 +30,53 @@ function validateForm(e) {
         isValid = false;
     }
 
-    // Age: must be 18 or older
+    // Age
     if (age === '' || isNaN(age) || Number(age) < 18) {
         document.getElementById('ageError').textContent = 'Age must be 18 or older';
         document.getElementById('age').classList.add('invalid');
         isValid = false;
     }
 
-    // Phone: (XXX) XXX-XXXX
+    // Phone
     if (!/^\(\d{3}\)\s\d{3}-\d{4}$/.test(phone)) {
         document.getElementById('phoneError').textContent = 'Format must be (XXX) XXX-XXXX';
         document.getElementById('phone').classList.add('invalid');
         isValid = false;
     }
 
-    // Email: valid format
+    // Email
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         document.getElementById('emailError').textContent = 'Enter a valid email address.';
         document.getElementById('email').classList.add('invalid');
         isValid = false;
     }
     
-    // Insurance Provider: must be selected
+    // Insurance Provider
     if (!insuranceProvider) {
         document.getElementById('insuranceProviderError').textContent = 'Please select a provider.';
         document.getElementById('insuranceProvider').classList.add('invalid');
         isValid = false;
     }
 	
-    // Policy Number: alphanumeric, exactly 10 characters
+    // Policy Number
     if (!/^[A-Za-z0-9]{10}$/.test(policyNumber)) {
         document.getElementById('policyNumberError').textContent = 'Must be alphanumeric are 10 characters long.';
         document.getElementById('policyNumber').classList.add('invalid');
         isValid = false;
     }
+
+    //Username:
+        // Username: >5 chars, any character
+    if (username.length <= 5) {
+        document.getElementById('usernameError').textContent = 'Username must be more than 5 characters.';
+        document.getElementById('username').classList.add('invalid');
+        isValid = false;
+    }
+
+    // Password: at least 8 chars, any character
+    if (password.length < 8) {
+        document.getElementById('passwordError').textContent = 'Min 8 chars, must include letter, number & symbol';
+        document.getElementById('password').classList.add('invalid');
+        isValid = false;
+    }
+    
