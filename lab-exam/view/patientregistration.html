@@ -4,3 +4,30 @@
     <title>Patient Registration</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+<body> 
+    <h2> Clinic Patient Registration</h2>
+     <div class="form-box">
+        <form id="patientForm" autocomplete="off">
+            <table>
+               <tr>
+                    <td><label for="fullName">Full Name:</label></td>
+                    <td>
+                        <input type="text" id="fullName" name="fullName">
+                        <span class="error" id="fullNameError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="age">Age:</label></td>
+                    <td>
+                        <input type="number" id="age" name="age" min="0">
+                        <span class="error" id="ageError"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Phone Number:</label></td>
+                    <td>
+                        <input type="text" id="phone" name="phone" placeholder="(XXX) XXX-XXXX">
+                        <span class="error" id="phoneError"></span>
+                    </td>
+                </tr>
+                <tr>
